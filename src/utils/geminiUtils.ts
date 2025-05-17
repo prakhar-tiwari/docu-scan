@@ -1,13 +1,11 @@
 import { GoogleGenAI } from "@google/genai";
 
-// Initialize the Gemini API with your API key
-const ai = new GoogleGenAI({
-  apiKey: "AIzaSyDYSHW91nnSWWo5y-nnVTQg8BqcUpo1Idk",
-});
+// Initialize the Google Generative AI with your API key
+const genAI = new GoogleGenAI(import.meta.env.VITE_GEMINI_API_KEY);
 
 export const generateSummary = async (text: string): Promise<string> => {
   try {
-    const response = await ai.models.generateContent({
+    const response = await genAI.models.generateContent({
       model: "gemini-2.0-flash",
       contents: `Please provide a concise summary of the following text, highlighting the key points and main ideas. Keep the summary clear and informative:
 
