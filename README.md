@@ -4,9 +4,9 @@ DocuScan is a document scanning application with an integrated AI summary featur
 
 ## Screenshot
 
-![DocuScan Screenshot](path/to/your/image.png)
+![DocuScan Screenshot](assets/image.png)
 
-**Note:** Please replace `path/to/your/image.png` with the actual path to the image file you add to the repository (e.g., `assets/screenshot.png`). You will need to manually add the image file to your repository.
+**Note:** Please make sure to add your screenshot image file (e.g., `screenshot.png`) to the `assets/` directory in your project's root. You will need to manually add the image file to your repository.
 
 ## Features
 
